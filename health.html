@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthBuzz - Personalized Healthcare Guidance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i> HealthBuzz
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>HealthBuzz: Your Emergency Healthcare Assistant</h1>
+                <p>Feeling unwell at home? Get instant guidance, temporary diagnosis, book ambulances, and find nearby hospitals—all in one place.</p>
+                <a href="#services" class="cta-button">Get Help Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="health_alert.jpg" alt="Healthcare assistance illustration" />
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <a href="#health-assessment" class="service-card">
+                    <i class="fas fa-stethoscope"></i>
+                    <h3>Health Assessment</h3>
+                    <p>Get instant first aid advice and recommendations based on your symptoms.</p>
+                </a>
+                <a href="#hospital-section" class="service-card">
+                    <i class="fas fa-hospital"></i>
+                    <h3>Facility Locator</h3>
+                    <p>Find nearby hospitals and clinics with real-time availability information.</p>
+                </a>
+                <a href="#emergency-booking" class="service-card">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Emergency Booking</h3>
+                    <p>Book ambulances, hospital beds, and other facilities in urgent situations.</p>
+                </a>
+                <a href="#health-monitoring" class="service-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Health Monitoring</h3>
+                    <p>Track your vital signs and receive personalized health tips.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="health-assessment">
+            <h2>Health Issue Assessment</h2>
+            <form id="health-form">
+                <textarea id="health-description" rows="4" placeholder="Describe your health issue here..."></textarea>
+                <button type="submit">Get Diagnosis</button>
+            </form>
+            <div id="recommendations">
+                <h3>Diagnosis</h3>
+                <p id="diagnosis-result">Enter your symptoms to get a possible diagnosis.</p>
+            </div>
+            <div id="first-aid">
+                <h3>First Aid Recommendations</h3>
+                <!-- First aid recommendations will be dynamically populated here -->
+            </div>
+            <div id="lifestyle-changes">
+                <h3>Lifestyle Changes</h3>
+                <!-- Lifestyle changes will be dynamically populated here -->
+            </div>
+        </section>
+
+
+        <!-- Hospital Information Section -->
+        <section id="hospital-section">
+            <h2>Find Nearby Hospitals</h2>
+            <div class="hospital-grid">
+                <!-- Hospital Card 1 -->
+                <div class="hospital-card">
+                    <h3>Aakash Healthcare</h3>
+                    <p><strong>Address:</strong> Road No. 201, Sector-3, Dwarka, New Delhi</p>
+                    <p><strong>Distance:</strong> <span class="hospital-distance">2 km</span></p>
+                    <p><strong>Beds Available:</strong> <span class="hospital-beds">12</span></p>
+                    <p><strong>Contact:</strong> <a href="tel:+5551234">011 4338 8888</a></p>
+                    <p><strong>Rating:</strong> <span class="hospital-rating">4.6 ★</span></p>
+                    <a href="#https://aakashhealthcare.com/" class="cta-button">View Details</a>
+                </div>
+
+                <!-- Hospital Card 2 -->
+                <div class="hospital-card">
+                    <h3>Bhagat Chandra Hospital</h3>
+                    <p><strong>Address:</strong> Mahavir Enclave, Palam Dabri Margd</p>
+                    <p><strong>Distance:</strong> <span class="hospital-distance">5 km</span></p>
+                    <p><strong>Beds Available:</strong> <span class="hospital-beds">8</span></p>
+                    <p><strong>Contact:</strong> <a href="tel:+5555678">011-45102030</a></p>
+                    <p><strong>Rating:</strong> <span class="hospital-rating">4.2 ★</span></p>
+                    <a href="#https://www.bhagathospital.com/" class="cta-button">View Details</a>
+                </div>
+
+                <!-- Hospital Card 3 -->
+                <div class="hospital-card">
+                    <h3>Manipal Hospital</h3>
+                    <p><strong>Address:</strong> Sector 6 Dwarka, Dwarka, Delhi, 110075</p>
+                    <p><strong>Distance:</strong> <span class="hospital-distance">3 km</span></p>
+                    <p><strong>Beds Available:</strong> <span class="hospital-beds">5</span></p>
+                    <p><strong>Contact:</strong> <a href="tel:+5559012">011 4967 4967</a></p>
+                    <p><strong>Rating:</strong> <span class="hospital-rating">4.6 ★</span></p>
+                    <a href="#https://www.manipalhospitals.com/delhi/?utm_source=gmb" class="cta-button">View Details</a>
+                </div>
+
+                <!-- Hospital Card 4 -->
+                <div class="hospital-card">
+                    <h3>Venkateshwar Hospital</h3>
+                    <p><strong>Address:</strong> Sector 12 Rd, Sector 18, Sector 18A Dwarka, Dwarka, New Delhi, Delhi, 110075</p>
+                    <p><strong>Distance:</strong> <span class="hospital-distance">4.0 km</span></p>
+                    <p><strong>Beds Available:</strong> <span class="hospital-beds">10</span></p>
+                    <p><strong>Contact:</strong> <a href="tel:+5553456">011 4855 5555</a></p>
+                    <p><strong>Rating:</strong> <span class="hospital-rating">4.5 ★</span></p>
+                    <a href="#https://www.venkateshwarhospitals.com/" class="cta-button">View Details</a>
+                </div>
+
+                <!-- Hospital Card 5 -->
+                <div class="hospital-card">
+                    <h3>Max Super Speciality</h3>
+                    <p><strong>Address:</strong> Plot No. 1, Sector 10 Dwarka, Dwarka, Delhi, 110075</p>
+                    <p><strong>Distance:</strong> <span class="hospital-distance">5.0 km</span></p>
+                    <p><strong>Beds Available:</strong> <span class="hospital-beds">15</span></p>
+                    <p><strong>Contact:</strong> <a href="tel:+5557890">088604 44888</a></p>
+                    <p><strong>Rating:</strong> <span class="hospital-rating">4.5 ★</span></p>
+                    <a href="#https://www.maxhealthcare.in/hospital-network/max-super-speciality-hospital-dwarka?utm_source=D-Organic&utm_medium=gmb" class="cta-button">View Details</a>
+                </div>
+
+                <!-- Hospital Card 6 -->
+                <div class="hospital-card">
+                    <h3>Medeor Hospital</h3>
+                    <p><strong>Address:</strong> Near Ashirwad Chowk, Phase 1, HAF-B, Sector 12 Dwarka, New Delhi, Delhi 110075</p>
+                    <p><strong>Distance:</strong> <span class="hospital-distance">5 km</span></p>
+                    <p><strong>Beds Available:</strong> <span class="hospital-beds">20</span></p>
+                    <p><strong>Contact:</strong> <a href="tel:+5551234">070428 82534</a></p>
+                    <p><strong>Rating:</strong> <span class="hospital-rating">4.8 ★</span></p>
+                    <a href="#https://medeor.in/" class="cta-button">View Details</a>
+                </div>
+
+                <!-- Hospital Card 7 -->
+                <div class="hospital-card">
+                    <h3>Tarak Hospital</h3>
+                    <p><strong>Address:</strong> 789 Oak Avenue, Rivertown</p>
+                    <p><strong>Distance:</strong> <span class="hospital-distance">6 km</span></p>
+                    <p><strong>Beds Available:</strong> <span class="hospital-beds">10</span></p>
+                    <p><strong>Contact:</strong> <a href="tel:+5555678">07947123753</a></p>
+                    <p><strong>Rating:</strong> <span class="hospital-rating">4.3 ★</span></p>
+                    <a href="#https://www.tarakhospital.in/" class="cta-button">View Details</a>
+                </div>
+
+                <!-- Hospital Card 8 -->
+                <div class="hospital-card">
+                    <h3>Accuprobe Diagnostics</h3>
+                    <p><strong>Address:</strong> Dwarka Mor, D-1/9, near Metro Pillar No.761, Block D, Mansa Ram Park, Uttam Nagar, Delhi, 110059</p>
+                    <p><strong>Distance:</strong> <span class="hospital-distance">2 km</span></p>
+                    <p><strong>Beds Available:</strong> <span class="hospital-beds">12</span></p>
+                    <p><strong>Contact:</strong> <a href="tel:+5553456">099588 67106</a></p>
+                    <p><strong>Rating:</strong> <span class="hospital-rating">4.8 ★</span></p>
+                    <a href="#https://www.accuprobe.in/" class="cta-button">View Details</a>
+                </div>
+
+                <!-- Hospital Card 9 -->
+                <div class="hospital-card">
+                    <h3>Shree Hospital</h3>
+                    <p><strong>Address:</strong> SHREE HOSPITAL PLOT, 54, Sector-12A Rd, Block A, Sector 12 Dwarka, Dwarka, Delhi, 110078</p>
+                    <p><strong>Distance:</strong> <span class="hospital-distance">6 km</span></p>
+                    <p><strong>Beds Available:</strong> <span class="hospital-beds">25</span></p>
+                    <p><strong>Contact:</strong> <a href="tel:+5556789">098105 36755</a></p>
+                    <p><strong>Rating:</strong> <span class="hospital-rating">4.9 ★</span></p>
+                    <a href="#https://shreehospital.co.in/" class="cta-button">View Details</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="emergency-booking">
+            <h2>Emergency Booking</h2>
+            <form id="booking-form">
+                <!-- User Information -->
+                <div class="form-group">
+                    <label for="user-name">Your Name</label>
+                    <input type="text" id="user-name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-contact">Contact Number</label>
+                    <input type="tel" id="user-contact" placeholder="Enter your contact number" required>
+                </div>
+        
+                <!-- Booking Type -->
+                <div class="form-group">
+                    <label for="booking-type">Select Service</label>
+                    <select id="booking-type" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="ambulance">Ambulance</option>
+                        <option value="bed">Hospital Bed</option>
+                        <option value="facilities">Other Facilities</option>
+                    </select>
+                </div>
+        
+                <!-- Additional Details -->
+                <div class="form-group">
+                    <label for="booking-details">Additional Details</label>
+                    <textarea id="booking-details" placeholder="Provide additional details (e.g., location, condition, etc.)"></textarea>
+                </div>
+        
+                <!-- SOS Button -->
+                <button type="button" id="sos-button" class="sos-button">SOS Emergency</button>
+        
+                <!-- Submit Button -->
+                <button type="submit" class="submit-button">Book Now</button>
+            </form>
+        
+            <!-- Features Section -->
+            <div class="features">
+                <h3>Features:</h3>
+                <ul>
+                    <li>Real-time GPS tracking of ambulances.</li>
+                    <li>Estimated time of arrival (ETA) display.</li>
+                    <li>Multi-payment options (credit card, UPI, etc.).</li>
+                    <li>Emergency contact integration for faster communication.</li>
+                    <li>24/7 customer support for assistance.</li>
+                </ul>
+            </div>
+        
+            <!-- Status Tracking -->
+            <div id="status-tracking">
+                <h3>Track Your Booking:</h3>
+                <p>Use our tracking system to monitor the status of your ambulance or facility request in real time.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>About HealthBuzz</h2>
+                    <p>
+                        Welcome to <strong>HealthBuzz</strong>, your comprehensive gateway to modern healthcare solutions. Our platform is designed to empower individuals by providing instant access to reliable healthcare guidance, personalized insights, and seamless connectivity between health and fitness apps.
+                    </p>
+                    <p>
+                        At HealthBuzz, we believe in making quality healthcare accessible to everyone, anytime, anywhere. By integrating cutting-edge technology with user-centric design, we ensure a smooth and secure experience for all.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="health.jpeg" alt="Healthcare illustration">
+                </div>
+            </div>
+        </section>
+      
+      <!-- Testimonials Section -->
+        <section id="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-card">
+            <p class="testimonial-text">"HealthBuzz helped me find the nearest hospital during an emergency. Highly recommended!"</p>
+            <h4>- John Doe</h4>
+            <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+            <p class="testimonial-text">"The health monitoring feature is a lifesaver for tracking my vitals. It's so easy to use and keeps me updated on my health metrics."</p>
+            <h4>- Jane Smith</h4>
+            <div class="stars">★★★★☆</div>
+            </div>
+            <div class="testimonial-card">
+            <p class="testimonial-text">"User-friendly interface and accurate data. This app has been a game-changer for my health management."</p>
+            <h4>- Sarah Lee</h4>
+            <div class="stars">★★★★★</div>
+            </div>
+            <!-- Add more testimonials -->
+            <div class="testimonial-card">
+            <p class="testimonial-text">"It keeps me updated on my health stats regularly. I feel more in control of my well-being now."</p>
+            <h4>- Mike Brown</h4>
+            <div class="stars">★★★★☆</div>
+            </div>
+            <div class="testimonial-card">
+            <p class="testimonial-text">"Highly reliable and easy to use. I love how this app simplifies everything about health tracking."</p>
+            <h4>- Emily Clark</h4>
+            <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+            <p class="testimonial-text">"Helped me connect with the best doctors nearby. The recommendations were spot-on!"</p>
+            <h4>- David Miller</h4>
+            <div class="stars">★★★★☆</div>
+            </div>
+            <div class="testimonial-card">
+            <p class="testimonial-text">"Excellent app for health-conscious individuals. I can't imagine managing my health without it now."</p>
+            <h4>- Lisa Wilson</h4>
+            <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial-card">
+            <p class="testimonial-text">"A must-have for everyone concerned about their health. It's practical and very well-designed."</p>
+            <h4>- Robert Johnson</h4>
+            <div class="stars">★★★★★</div>
+            </div>
+        </div>
+        </section>
+
+      <!-- FAQ Section -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">How can I book an ambulance?</h3>
+                <p>You can use the Emergency Booking section to book an ambulance quickly. Simply fill out the required details and submit your request.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">Is HealthBuzz free to use?</h3>
+                <p>Yes, most of our services are free, but some advanced features like premium health monitoring may require a subscription.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">How accurate is the health assessment tool?</h3>
+                <p>Our health assessment tool uses AI-based algorithms and is designed to provide general recommendations. However, it is not a substitute for professional medical advice.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">Can I track my health data over time?</h3>
+                <p>Yes, with our Health Monitoring feature, you can track your vital signs and progress over time to stay informed about your health.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">How do I find nearby hospitals?</h3>
+                <p>Use our Facility Locator tool to find nearby hospitals and clinics. It provides real-time availability information for your convenience.</p>
+            </div>
+            <div class="faq-item">
+                <h3 onclick="toggleFAQ(this)">How secure is my personal information?</h3>
+                <p>Your privacy is our priority. All personal data is encrypted and stored securely in compliance with industry standards.</p>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HealthBuzz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
