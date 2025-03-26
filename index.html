@@ -60,6 +60,16 @@
             </div>
         </section>
 
+        <div id="locationPopup" class="popup">
+            <div class="popup-content">
+              <h2>Location Access</h2>
+              <p>This website would like to access your location to provide better services.</p>
+              <button id="allowLocation">Allow</button>
+              <button id="denyLocation">Deny</button>
+            </div>
+        </div>
+          
+
         <section id="health-assessment">
             <h2>Health Issue Assessment</h2>
             <form id="health-form">
@@ -259,6 +269,14 @@
                 </div>
             </div>
         </section>
+
+        <script>
+            // Add an event listener to handle form submission
+            document.getElementById('booking-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+                window.location.href = 'payment-options.html'; // Redirect to payment-options.html
+            });
+        </script>
       
       <!-- Testimonials Section -->
         <section id="testimonials">
