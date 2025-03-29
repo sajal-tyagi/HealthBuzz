@@ -9,7 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     healthForm.addEventListener('submit', function (e) {
         e.preventDefault(); // Prevent form submission
-        const issue = healthDescription.value.toLowerCase();
+        document.body.style.cursor = "wait";
+        diagnosisResult.textContent = "Processing your symptoms... Please wait.";
+    setTimeout(() => {
+        const issue = healthDescription.value.toLowerCase(); // Delayed execution by 2 seconds
+        // Reset cursor back to normal
+        document.body.style.cursor = "default";
+        // 2 seconds delay  
 
         // // Hardcoded symptom-to-diagnosis mapping
         // const diagnoses = {
@@ -28,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Simple keyword-based recommendations for first aid and lifestyle changes
         if (issue.includes('pneumonia')) {
-            diagnosisResult.innerHTML = `
+            diagnosisResult .innerHTML = `
             <h4>Diagnosis</h4>
     <p><strong>Key symptoms</strong> include cough (sometimes with colored mucus), fever, chills, shortness of breath, and chest pain.</p>
     <p>A doctor may identify:</p>
@@ -986,6 +992,7 @@ document.addEventListener('DOMContentLoaded', function () {
             firstAidDiv.innerHTML = '<p>No specific recommendations available. Please consult a healthcare professional.</p>';
             lifestyleChangesDiv.innerHTML = '';
         }
+    }, 2000);
     });
 });
 
