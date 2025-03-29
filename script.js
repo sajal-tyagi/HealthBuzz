@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     healthForm.addEventListener('submit', function (e) {
         e.preventDefault(); // Prevent form submission
         document.body.style.cursor = "wait";
+        diagnoseButton.style.cursor = "wait";
+        diagnoseButton.disabled = true;
         diagnosisResult.textContent = "Processing your symptoms... Please wait.";
     setTimeout(() => {
         const issue = healthDescription.value.toLowerCase(); // Delayed execution by 2 seconds
