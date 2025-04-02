@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #e3f2fd;
+        }
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: auto;
+        }
+        label, input, textarea, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #doctorInputContainer {
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Hospital Registration Form</h2>
+    <form>
+        <label>Hospital Name:</label>
+        <input type="text" name="hospital_name" placeholder="Enter hospital name" required width="10px">
+        
+        <label>Location:</label>
+        <input type="text" name="location" placeholder="Enter location" required>
+        
+        <label>Contact Number:</label>
+        <input type="tel" name="contact_number" placeholder="Enter contact number" required>
+        
+        <label>Number of Staff:</label>
+        <input type="number" name="staff_count" placeholder="Enter number of staff" required>
+        
+        <h3>Doctors & Specializations</h3>
+        <div id="doctorInputContainer">
+            <label>Doctor's Name:</label>
+            <input type="text" id="doctorName" placeholder="Enter doctor's name">
+            <label>Specialization:</label>
+            <input type="text" id="doctorSpecialization" placeholder="Enter specialization">
+            <button type="button" onclick="addDoctorToTable()">Add to Table</button>
+        </div>
+        <button type="button" onclick="showDoctorInput()">Add Doctor</button>
+        
+        <table id="doctorsTable">
+            <tr>
+                <th>Doctor's Name</th>
+                <th>Specialization</th>
+                <th>Action</th>
+            </tr>
+        </table>
+        
+        <label>Equipments Available:</label>
+        <textarea name="equipments" rows="3" placeholder="List of available equipments"></textarea>
+        
+        <label>Beds Available:</label>
+        <input type="number" name="beds" placeholder="Enter available beds" required>
+        
+        <button type="submit">Register</button>
+    </form>
 
+    <script>
+        function showDoctorInput() {
+            document.getElementById("doctorInputContainer").style.display = "block";
+        }
+
+        function addDoctorToTable() {
+            let doctorName = document.getElementById("doctorName").value;
+            let doctorSpecialization = document.getElementById("doctorSpecialization").value;
+            if (doctorName.trim() === "" || doctorSpecialization.trim() === "") {
+                alert("Please enter both doctor name and specialization");
+                return;
+            }
+            let table = document.getElementById("doctorsTable");
+            let row = table.insertRow();
+            let cell1 = row.insertCell(0);
+            let cell2 = row.insertCell(1);
+            let cell3 = row.insertCell(2);
+            
+            cell1.textContent = doctorName;
+            cell2.textContent = doctorSpecialization;
+            cell3.innerHTML = '<button type="button" onclick="removeRow(this)">Remove</button>';
+            
+            document.getElementById("doctorName").value = "";
+            document.getElementById("doctorSpecialization").value = "";
+        }
+
+        function removeRow(button) {
+            let row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+    </script>
+</body>
+</html>
