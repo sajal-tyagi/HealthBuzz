@@ -25,14 +25,6 @@ header {
     width: 100%;
     z-index: 1000;
 }
-.login-button {
-        background-color: red; /* Red background */
-        color: white; /* White text */
-        padding: 10px 15px; /* Padding for the button */
-        text-decoration: none; /* Remove underline */
-        border-radius: 5px; /* Rounded corners */
-        display: inline-block; /* Make it look like a button */
-    }
 
 }
 nav {
