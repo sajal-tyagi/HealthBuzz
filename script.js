@@ -265,7 +265,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p>Remember, most healthy individuals recover from the flu without complications. However, if symptoms worsen or you're in a high-risk group, consult a healthcare provider promptly.</p>
             `;
-        } else if (issue.includes('lyme disease')) {
+        } else if (issue.includes('fever')) {
+    diagnosisResult.innerHTML = `
+    <h4>Diagnosis</h4>
+    <p><strong>Key symptoms</strong> of fever include:</p>
+    <ul>
+        <li>Elevated body temperature (above 37.2–38.3°C or 99.0–100.9°F)</li>
+        <li>Chills or shivering</li>
+        <li>Sweating</li>
+        <li>Headache</li>
+        <li>Body aches and fatigue</li>
+        <li>Loss of appetite</li>
+        <li>Flushed skin or hot sensation</li>
+    </ul>
+
+    <p><strong>Differential diagnosis</strong> possibilities:</p>
+    <ul>
+        <li>Viral infections (e.g., dengue, influenza, COVID-19)</li>
+        <li>Bacterial infections (e.g., pneumonia, strep throat)</li>
+        <li>Malaria</li>
+        <li>Heat exhaustion or hyperthermia</li>
+    </ul>
+
+    <p>Diagnostic methods include:</p>
+    <ul>
+        <li>Measurement of body temperature using a thermometer</li>
+        <li>Complete Blood Count (CBC) to identify infection type</li>
+        <li>C-Reactive Protein (CRP) test for inflammation levels</li>
+        <li>Nasal or throat swabs for viral identification (e.g., RT-PCR)</li>
+        <li>Blood cultures to rule out bacterial infections</li>
+    </ul>
+    `;
+
+    firstAidDiv.innerHTML = `
+    <h4>First Aid</h4>
+    <ol>
+        <li>Rest in a cool, comfortable environment.</li>
+        <li>Stay hydrated by drinking plenty of water and electrolyte solutions.</li>
+        <li>Use over-the-counter medications like acetaminophen or ibuprofen to reduce fever and alleviate discomfort.</li>
+        <li>Avoid heavy clothing; wear lightweight and breathable fabrics.</li>
+        <li>If feeling too warm, use a damp cloth on the forehead or take a lukewarm bath.</li>
+        <li>If fever persists beyond 3 days or is accompanied by severe symptoms (e.g., difficulty breathing, rash, confusion), seek medical attention immediately.</li>
+    </ol>
+    `;
+
+    lifestyleChangesDiv.innerHTML = `
+    <h4>Lifestyle</h4>
+    <p>To manage fever and promote recovery:</p>
+    <ol>
+        <li>Avoid strenuous activities; prioritize rest.</li>
+        <li>Maintain a balanced diet with easily digestible foods like soups and fruits.</li>
+        <li>Practice good hygiene to prevent spreading infections:
+            <ul>
+                <li>Wash hands frequently with soap and water.</li>
+                <li>Avoid sharing personal items like towels or utensils.</li>
+            </ul>
+        </li>
+        <li>If fever is due to an infectious disease, isolate yourself to prevent transmission.</li>
+        <li>Avoid alcohol and caffeine as they can worsen dehydration.</li>
+    </ol>
+
+    <p>If symptoms worsen or new symptoms appear, consult a healthcare provider promptly. Fever is often a sign of the body fighting an infection and usually resolves with proper care.</p>
+    `;
+}        else if (issue.includes('lyme disease')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p>Diagnosis typically involves:</p>
