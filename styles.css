@@ -16,6 +16,10 @@ a {
     text-decoration: none;
     color: #4CAF50;
 }
+div.pos{
+     position:relative;
+     left: 1000px;
+}
 
 /* Header styles */
 header {
