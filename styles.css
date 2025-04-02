@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,10 +15,6 @@ a {
     text-decoration: none;
     color: #4CAF50;
 }
-div.pos{
-     position:relative;
-     left: 1000px;
-}
 
 /* Header styles */
 header {
@@ -30,7 +25,21 @@ header {
     z-index: 1000;
 }
 
-}
+    .login-button {
+        background-color: red; /* Red background */
+        color: white; /* White text */
+        padding: 10px 15px; /* Padding for the button */
+        text-decoration: none; /* Remove underline */
+        border-radius: 5px; /* Rounded corners */
+        position: relative;
+        left: 100px;
+        display: inline-block; /* Make it look like a button */
+    }
+
+    .login-button:hover {
+        background-color: darkred; /* Darker red on hover */
+    }
+
 nav {
     display: flex;
     justify-content: space-between;
