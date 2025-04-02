@@ -33,7 +33,10 @@ header {
         border-radius: 5px; /* Rounded corners */
         display: inline-block; /* Make it look like a button */
     }
-
+.register-button {
+    background-color: #008CBA; /* Blue */
+    border-radius: 5px;
+}
 nav {
     display: flex;
     justify-content: space-between;
