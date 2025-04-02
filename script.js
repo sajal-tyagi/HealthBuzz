@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // }
 
         // Simple keyword-based recommendations for first aid and lifestyle changes
-        if (issue.includes('pneumonia')) {
+        if (issue.includes('pneumonia') || issue.includes('Pneumonia')) {
             diagnosisResult .innerHTML = `
             <h4>Diagnosis</h4>
     <p><strong>Key symptoms</strong> include cough (sometimes with colored mucus), fever, chills, shortness of breath, and chest pain.</p>
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li><strong>Gentle exercise:</strong> Gradually reintroduce walking or yoga to rebuild lung strength.</li>
     </ul>
             `;
-        } else if (issue.includes('covid-19')) {
+        } else if (issue.includes('covid-19') || issue.includes('covid19') || issue.includes('Covid-19')) {
             diagnosisResult.innerHTML = `
                         <h4>Diagnosis</h4>
                 <p><strong>Key symptoms</strong> of COVID-19 include:</p>
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li><strong>Sleep:</strong> Prioritize adequate sleep (7-9 hours per night). Inadequate sleep (less than 4 hours) is associated with increased COVID-19 risk.</li>
                     <li><strong>Diet:</strong></p>
             `;
-        } else if (issue.includes('meningitis')) {
+        } else if (issue.includes('meningitis') || issue.includes('Meningitis')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p><strong>Key symptoms</strong> of meningitis include:</p>
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <p><em>Remember, meningitis can be life-threatening, and early diagnosis and treatment are crucial for the best outcomes. Always seek immediate medical attention if meningitis is suspected.</em></p>
             `;
         
-        } else if (issue.includes('influenza')) {
+        } else if (issue.includes('influenza') || issue.includes('Influenza')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p><strong>Key symptoms</strong> of influenza include:</p>
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p>Remember, most healthy individuals recover from the flu without complications. However, if symptoms worsen or you're in a high-risk group, consult a healthcare provider promptly.</p>
             `;
-        } else if (issue.includes('fever')) {
+        } else if (issue.includes('fever') || issue.includes('Fever') || issue.includes('cold') || issue.includes('Cold')) {
     diagnosisResult.innerHTML = `
     <h4>Diagnosis</h4>
     <p><strong>Key symptoms</strong> of fever include:</p>
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p>If symptoms worsen or new symptoms appear, consult a healthcare provider promptly. Fever is often a sign of the body fighting an infection and usually resolves with proper care.</p>
     `;
-}        else if (issue.includes('lyme disease')) {
+}        else if (issue.includes('lyme disease') || issue.includes('Lyme disease')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p>Diagnosis typically involves:</p>
@@ -406,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p>Early diagnosis and treatment are crucial for preventing severe complications associated with Lyme disease.</p>
             `;
-        } else if (issue.includes('tuberculosis')) {
+        } else if (issue.includes('tuberculosis') || issue.includes('Tuberculosis')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p><strong>Key symptoms include:</strong></p>
@@ -485,7 +485,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </li>
     </ol>
             `;
-        } else if (issue.includes('hiv/aids')) {
+        } else if (issue.includes('hiv/aids') || issue.includes('Hiv/aids')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p><strong>Symptoms:</strong></p>
@@ -570,7 +570,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </li>
     </ol>
             `;
-        } else if (issue.includes('hepatitis')) {
+        } else if (issue.includes('hepatitis') || issue.includes('Hepatitis')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p><strong>Key symptoms include:</strong></p>
@@ -627,7 +627,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p><em>Remember, early detection and proper management are crucial for preventing complications and improving outcomes in hepatitis cases.</em></p>
             `;
-        } else if (issue.includes('malaria')) {
+        } else if (issue.includes('malaria') || issue.includes('Malaria')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <ul>
@@ -675,7 +675,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p><em>Early diagnosis and proper treatment are crucial for preventing complications. If you've traveled to a malaria-endemic area and experience symptoms, seek medical care immediately.</em></p>
             `;
-        } else if (issue.includes('diabetes')) {
+        } else if (issue.includes('diabetes') || issue.includes('Diabetes')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p>Diabetes is diagnosed through blood tests that measure glucose levels:</p>
@@ -763,7 +763,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p>By following these lifestyle changes and working closely with a healthcare team, individuals with diabetes can effectively manage their condition and reduce the risk of complications.</p>
             `;
-        } else if (issue.includes('high blood pressure')) {
+        } else if (issue.includes('high blood pressure') || issue.includes('High blood pressure') || issue.includes('High bloodpressure') || issue.includes('High BP') || issue.includes('High bp') || issue.includes('hypertension') || issue.includes('Hypertension')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p>Hypertension is diagnosed through blood pressure measurements:</p>
@@ -809,7 +809,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p><em>By adopting these lifestyle changes and working closely with healthcare providers, individuals can effectively manage hypertension and reduce the risk of complications such as heart disease and stroke.</em></p>
             `;
-        } else if (issue.includes('arthritis')) {
+        } else if (issue.includes('arthritis') || issue.includes('Arthritis')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p>Diagnosis typically includes:</p>
@@ -874,7 +874,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p><em>By combining medical treatments with these lifestyle adjustments, individuals can better manage arthritis symptoms and improve their quality of life.</em></p>
             `;
-        } else if (issue.includes('cancer')) {
+        } else if (issue.includes('cancer') || issue.includes('Cancer')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p>Diagnosis typically involves:</p>
@@ -951,7 +951,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p><em>By adopting these lifestyle changes alongside medical care, individuals can improve their quality of life and enhance treatment outcomes during their cancer journey.</em></p>
             `;
-        } else if (issue.includes('asthma')) {
+        } else if (issue.includes('asthma') || issue.includes('Asthma') || issue.includes('asthama') || issue.includes('Asthama')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p>Asthma is diagnosed through:</p>
@@ -1007,7 +1007,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <p>By following these guidelines and working closely with healthcare providers, individuals with asthma can effectively manage their condition and improve their quality of life.</p>
             `;
-        } else if (issue.includes('heart attack')) {
+        } else if (issue.includes('heart attack') || issue.includes('Heart attack') || issue.includes('heartattack') || issue.includes('Heartattack')) {
             diagnosisResult.innerHTML = `
             <h4>Symptoms</h4>
     <p>Key signs of a heart attack include:</p>
