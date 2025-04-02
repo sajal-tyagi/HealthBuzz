@@ -33,28 +33,22 @@ header {
         border-radius: 5px; /* Rounded corners */
         display: inline-block; /* Make it look like a button */
     }
+
 .register-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient */
+    background-color: #008CBA; /* Blue background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Padding for button size */
+    border: none; /* No border */
     border-radius: 25px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    cursor: pointer; /* Pointer cursor on hover */
     transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 .register-button:hover {
-    background: linear-gradient(90deg, #feb47b, #ff7e5f); /* Reverse gradient */
-    transform: translateY(-2px); /* Slight lift on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-.register-button:active {
-    transform: translateY(1px); /* Pressed effect */
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow */
+    background-color: #005f73; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
 }
 
 }
