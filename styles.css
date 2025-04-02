@@ -28,16 +28,10 @@ header {
 
 }
 nav {
-    position:relative;
-    left: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-}
-.login-button{
-    position:relative;
-    left: 1200px;
 }
 
 .logo {
@@ -49,6 +43,8 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
+     position:relative;
+     left: 1200px;
 }
 
 nav ul li {
