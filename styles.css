@@ -35,6 +35,10 @@ nav {
     align-items: center;
     padding: 1rem 5%;
 }
+.login-button{
+    position:relative;
+    left: 700px;
+}
 
 .logo {
     font-size: 1.5rem;
