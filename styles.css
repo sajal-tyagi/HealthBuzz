@@ -43,8 +43,6 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-     position:relative;
-     left: 1200px;
 }
 
 nav ul li {
