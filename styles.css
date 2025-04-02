@@ -34,23 +34,6 @@ header {
         display: inline-block; /* Make it look like a button */
     }
 
-.register-button {
-    background-color: #008CBA; /* Blue background */
-    color: white; /* White text */
-    font-size: 16px; /* Font size */
-    font-weight: bold; /* Bold text */
-    padding: 10px 20px; /* Padding for button size */
-    border: none; /* No border */
-    border-radius: 25px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth hover effect */
-}
-
-.register-button:hover {
-    background-color: #005f73; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight scaling effect on hover */
-}
-
 }
 nav {
     display: flex;
