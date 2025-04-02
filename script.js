@@ -199,7 +199,62 @@ document.addEventListener('DOMContentLoaded', function () {
     <p><em>Remember, meningitis can be life-threatening, and early diagnosis and treatment are crucial for the best outcomes. Always seek immediate medical attention if meningitis is suspected.</em></p>
             `;
         
-        } else if (issue.includes('influenza') || issue.includes('Influenza')) {
+        }else if (issue.includes('headache') || issue.includes('Headache')) {
+    diagnosisResult.innerHTML = `
+    <h4>Diagnosis</h4>
+    <p><strong>Key symptoms</strong> of headache include:</p>
+    <ul>
+        <li>Mild to severe pain in the head or neck</li>
+        <li>Nausea or vomiting (common with migraines)</li>
+        <li>Sensitivity to light or sound</li>
+        <li>Pressure or tightness around the forehead or back of the head (common with tension headaches)</li>
+        <li>Throbbing pain, often on one side of the head (common with migraines)</li>
+    </ul>
+
+    <p><strong>Differential diagnosis</strong> possibilities:</p>
+    <ul>
+        <li>Migraine</li>
+        <li>Tension-type headache</li>
+        <li>Cluster headache</li>
+        <li>Sinusitis</li>
+        <li>Subarachnoid hemorrhage (severe cases)</li>
+    </ul>
+
+    <p><strong>Diagnostic tests</strong>:</p>
+    <ul>
+        <li>Physical examination and medical history review</li>
+        <li>CT or MRI scans to rule out serious conditions</li>
+        <li>Blood tests to check for underlying issues</li>
+        <li>Neurological examination</li>
+    </ul>
+    `;
+
+    firstAidDiv.innerHTML = `
+    <h4>First Aid</h4>
+    <ol>
+        <li>Encourage rest in a quiet, dark room.</li>
+        <li>Apply a cold compress to the forehead for relief.</li>
+        <li>If dehydration is suspected, provide fluids.</li>
+        <li>Avoid triggers such as strong lights, loud noises, or stress.</li>
+        <li>If pain persists or worsens, seek medical attention promptly.</li>
+    </ol>
+    `;
+
+    lifestyleChangesDiv.innerHTML = `
+    <h4>Lifestyle</h4>
+    <p>To manage and reduce headaches:</p>
+    <ol>
+        <li><strong>Avoid triggers:</strong> Identify and avoid foods, stressors, or environmental factors that trigger headaches.</li>
+        <li><strong>Stay hydrated:</strong> Drink plenty of water throughout the day.</li>
+        <li><strong>Maintain regular sleep patterns:</strong> Ensure consistent sleep schedules to avoid fatigue-induced headaches.</li>
+        <li><strong>Exercise regularly:</strong> Engage in moderate physical activity to reduce stress and improve overall health.</li>
+        <li><strong>Avoid excessive caffeine:</strong> Limit caffeine intake as it can both trigger and alleviate headaches depending on usage.</li>
+        <li><strong>Practice relaxation techniques:</strong> Use meditation, yoga, or deep breathing exercises to manage stress effectively.</li>
+    </ol>
+
+    <p><em>If headaches are severe, recurrent, or accompanied by other concerning symptoms such as vision changes or neurological deficits, consult a healthcare provider immediately.</em></p>
+    `;
+}        else if (issue.includes('influenza') || issue.includes('Influenza')) {
             diagnosisResult.innerHTML = `
             <h4>Diagnosis</h4>
     <p><strong>Key symptoms</strong> of influenza include:</p>
